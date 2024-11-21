@@ -1,0 +1,16 @@
+crear controlador api--php artisan make:controller Api/V1/PostController --api --model=Post
+ToArray --php artisan make:resource V1/PostResource
+
+ruta - routes- 
+Route::apiResource('v1/post',App\Http\Controllers\Api\V1\PostController::class);
+
+
+nueva version 
+
+   6 php artisan make:controller Api/V2/PostController --api  --model=Post   ---crear apis
+   7 php artisan make:resource V2/PostResource --json de data
+   8 php artisan make:resource V2/PostCollection -- json general
+
+
+
+   https://medium.com/@naumancs/how-to-use-http-status-codes-properly-in-laravel-3f66eebf0e66
